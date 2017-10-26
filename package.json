@@ -1,0 +1,36 @@
+{
+  "name": "asteroids",
+  "version": "0.0.1",
+  "description": "A test application",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paulmeyerle/asteroids.git"
+  },
+  "engines": {
+    "npm": ">=4",
+    "node": ">=7"
+  },
+  "author": "Paul Meyerle",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-observable": "^0.16.0",
+    "rxjs": "^5.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "webpack": "^3.8.1"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}
