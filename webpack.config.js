@@ -8,16 +8,20 @@ const extractSass = new ExtractTextPlugin({
 });
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './app/index.js',
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: /node_modules/
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['env', 'react']
+        }
       },
       {
         test: /\.scss$/,
+        exclude: /node_modules/,
         use: extractSass.extract({
           use: [{
             loader: "css-loader"
@@ -34,7 +38,8 @@ module.exports = {
     extractSass
   ],
   resolve: {
-    extensions: [".tsx", ".ts", ".js"]
+    modules: ['app', 'node_modules'],
+    extensions: [".jsx", ".js"]
   },
   output: {
     filename: 'bundle.js',

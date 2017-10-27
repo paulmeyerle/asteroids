@@ -16,5 +16,5 @@ app.listen(port, host, (err) => {
     return console.error(chalk.red(err));
   }
 
-  console.log(chalk.green("application started"));
+  console.log(chalk.green("application started: http://localhost:3000/"));
 });
