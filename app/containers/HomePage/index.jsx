@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet';
+import Header from 'components/Header';
 
 class HomePage extends React.Component {
   render() {
@@ -10,8 +10,8 @@ class HomePage extends React.Component {
           <meta charSet="utf-8" />
           <title>Asteroids - Home</title>
         </Helmet>        
-        <div className="woahThere">HomePage</div>
-        <Link to="/settings">Settings</Link>
+        <Header />
+        <h1 className="woahThere">HomePage</h1>
       </div>
     );
   }

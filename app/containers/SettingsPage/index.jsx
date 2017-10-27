@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import { Helmet } from 'react-helmet';
+import Header from 'components/Header';
 
 class SettingsPage extends React.Component {
   render() {
@@ -9,9 +9,9 @@ class SettingsPage extends React.Component {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Asteroids - Settings</title>
-        </Helmet>        
-        <div>Settings</div>
-        <Link to="/">Home</Link>
+        </Helmet> 
+        <Header />       
+        <h1>Settings</h1>
       </div>
     );
   }
